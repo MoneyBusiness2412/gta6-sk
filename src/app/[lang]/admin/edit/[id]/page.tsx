@@ -90,7 +90,7 @@ export default async function EditArticlePage({ params }: { params: { lang: stri
             <label style={{ display: 'block', fontSize: '14px', fontWeight: 'bold', marginBottom: '8px', color: '#9ca3af' }}>Obsah článku</label>
             <textarea 
               name="content" 
-              defaultValue={article.content} 
+              defaultValue={article.content ?? ""}
               rows={8} 
               required 
               style={{ width: '100%', padding: '12px', borderRadius: '8px', backgroundColor: '#0d0d11', border: '1px solid #1f2937', color: '#fff', fontSize: '15px', boxSizing: 'border-box', resize: 'vertical' }} 
