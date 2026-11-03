@@ -28,7 +28,7 @@ export default async function LangHomePage({
         margin: "0 auto",
       }}
     >
-      <header style={{ marginBottom: "40px", borderBottom: "1px solid #27272a", pb: "20px" }}>
+      <header style={{ marginBottom: "40px", borderBottom: "1px solid #27272a", paddingBottom: "20px" }}>
         <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
           GTA VI News Portal ({lang.toUpperCase()})
         </h1>
