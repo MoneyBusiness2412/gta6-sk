@@ -44,13 +44,13 @@ export default async function AdminPage({ params }: { params: { lang: string } }
   const lang = ['sk', 'cs', 'en'].includes(params.lang) ? params.lang : 'sk';
   const t = translations[lang];
 
-  let articles = [];
+  let articles: any[] = [];
   try {
     articles = await prisma.article.findMany({
       orderBy: { id: 'desc' },
     });
   } catch (error) {
-    console.error('Chyba pri načítaní článkov pre admin:', error);
+    console.error("Failed to fetch articles:", error);
   }
 
   return (
