@@ -1,7 +1,7 @@
 import * as Effect from "effect/Effect";
 import * as Redacted from "effect/Redacted";
-import { AuthError } from "../Auth/AuthProvider.ts";
-import { getEnvRedacted } from "../Auth/Env.ts";
+import { AuthError } from "../Auth/AuthProvider";
+import { getEnvRedacted } from "../Auth/Env";
 import {
   makeStoredAuthProvider,
   storedSecret,
