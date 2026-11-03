@@ -1,0 +1,11 @@
+name = "gta6-sk"
+compatibility_date = "2026-11-01"
+pages_build_output_dir = ".vercel/output/static"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "gta6-db"
+database_id = "ec243c4d-2494-4868-b2fc-a740e96d93e3"
+
+[triggers]
+crons = ["0 */2 * * *"]
